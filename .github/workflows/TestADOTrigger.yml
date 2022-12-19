@@ -35,9 +35,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: 'Azure yaml connection'
-        uses: Azure/pipelines@v1
-        with:
-         azure-devops-project-url: 'https://dev.azure.com/tr-ihn-sandbox/JiraAdoMigrate'
-         azure-pipeline-name: azure-pipelines.yml # name of the Azure pipeline to be triggered
-         azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
+#      - name: 'Azure yaml connection'
+#        uses: Azure/pipelines@v1
+#        with:
+#         azure-devops-project-url: 'https://dev.azure.com/tr-ihn-sandbox/JiraAdoMigrate'
+#         azure-pipeline-name: azure-pipelines.yml # name of the Azure pipeline to be triggered
+#         azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
