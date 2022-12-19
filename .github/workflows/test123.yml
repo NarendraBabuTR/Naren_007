@@ -8,15 +8,10 @@ on:
   pull_request:
     branches: 
       - master
-
 jobs:
-    build:
-        name: Call Azure Pipeline
-        runs-on: ubuntu-latest
-        steps:
-        - name: Azure Pipelines Action
-          uses: Azure/pipelines@v1.2
-          with:
-            azure-devops-project-url: 'https://dev.azure.com/tr-ihn-sandbox/JiraAdoMigrate'
-            azure-pipeline-name: 'naren'
-            azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
+  CI:
+    runs-on: ubuntu-latest
+    steps :
+           - name: Call Azure Pipeline thru CURL
+             run : |
+                   curl --user '':dth343lqmfowent3wxin6u75bxvym5fkek2knnel2xs6l2cc7zba --header "Content-Type:application/json" --header "Accept:application/json" https://dev.azure.com/tr-ihn-sandbox/JiraAdoMigrate/_build?definitionId=28
