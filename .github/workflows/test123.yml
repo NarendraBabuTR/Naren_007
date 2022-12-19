@@ -14,4 +14,4 @@ jobs:
     steps :
            - name: Call Azure Pipeline thru CURL
              run : |
-                   curl --user '':dth343lqmfowent3wxin6u75bxvym5fkek2knnel2xs6l2cc7zba --header "Content-Type:application/json" --header "Accept:application/json" https://dev.azure.com/tr-ihn-sandbox/JiraAdoMigrate/_build?definitionId=28
+                   curl --user '':--header "Content-Type:application/json" --header "Accept:application/json" https://dev.azure.com/tr-ihn-sandbox/JiraAdoMigrate/_build?definitionId=28
